@@ -1,0 +1,1853 @@
+/* =========================================
+   METALLIC CHIC THEME
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    background: #e7e9eb;
+
+    color: #25282b;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 245px;
+
+    height: 100vh;
+
+    background: linear-gradient(
+        180deg,
+        #17191c,
+        #292d31,
+        #151719
+    );
+
+    color: white;
+
+    z-index: 1000;
+
+    box-shadow:
+        3px 0 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   SIDEBAR BRAND
+   ========================================= */
+
+.sidebar-brand {
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #555b60;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #4b5055,
+        #202326
+    );
+}
+
+.sidebar-brand i {
+
+    font-size: 28px;
+
+    color: #d5d8db;
+}
+
+.sidebar-brand div {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.sidebar-brand span {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   SIDEBAR MENU TITLE
+   ========================================= */
+
+.sidebar-title {
+
+    padding: 25px 20px 10px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    color: #aeb4b9;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   SIDEBAR MENU
+   ========================================= */
+
+.sidebar-menu {
+
+    list-style: none;
+
+    padding: 0 10px;
+
+    margin: 0;
+}
+
+.sidebar-menu li {
+
+    margin-bottom: 4px;
+}
+
+.sidebar-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 12px 13px;
+
+    color: #d5d8db;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.sidebar-menu a i {
+
+    width: 20px;
+
+    font-size: 16px;
+}
+
+.sidebar-menu a:hover {
+
+    background: #454a4f;
+
+    color: white;
+}
+
+
+/* ACTIVE MENU */
+
+.sidebar-menu li.active a {
+
+    background: linear-gradient(
+        135deg,
+        #4e5358,
+        #25282b
+    );
+
+    color: white;
+
+    box-shadow:
+        inset 3px 0 #d5d8db;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.main-content {
+
+    margin-left: 245px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   TOP NAVBAR
+   ========================================= */
+
+.top-navbar {
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: #f8f9fa;
+
+    border-bottom: 1px solid #c3c7ca;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LEFT SIDE */
+
+.top-navbar-left h5 {
+
+    margin: 0;
+
+    font-weight: 600;
+
+    color: #25282b;
+}
+
+.top-navbar-left small {
+
+    color: #858a8e;
+
+    font-size: 12px;
+}
+
+
+/* RIGHT SIDE */
+
+.top-navbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #4c5155;
+
+    font-size: 14px;
+}
+
+.top-navbar-right i {
+
+    font-size: 27px;
+
+    color: #555b60;
+}
+
+
+/* =========================================
+   DASHBOARD CONTENT
+   ========================================= */
+
+.dashboard-container {
+
+    padding: 30px;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+   ========================================= */
+
+.dashboard-header {
+
+    margin-bottom: 25px;
+}
+
+.dashboard-header h2 {
+
+    margin: 0;
+
+    font-weight: 600;
+
+    color: #25282b;
+}
+
+.dashboard-header p {
+
+    margin: 5px 0 0;
+
+    color: #777d81;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   STATISTICS CARDS
+   ========================================= */
+
+.stat-card {
+
+    min-height: 125px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    background: #f8f9fa;
+
+    border: 1px solid #b8bdc1;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.10);
+
+    transition: 0.2s;
+}
+
+.stat-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(0, 0, 0, 0.14);
+}
+
+
+/* STAT ICON */
+
+.stat-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 23px;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+
+    border: 1px solid #151719;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.25),
+        0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+/* STAT TEXT */
+
+.stat-content span {
+
+    display: block;
+
+    color: #777d81;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.stat-content h3 {
+
+    margin: 0;
+
+    font-size: 27px;
+
+    font-weight: 600;
+
+    color: #25282b;
+}
+
+
+/* =========================================
+   METALLIC CARD
+   ========================================= */
+
+.metallic-card {
+
+    background: #f8f9fa;
+
+    border: 1px solid #b8bdc1;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   DASHBOARD PANEL
+   ========================================= */
+
+.dashboard-panel {
+
+    min-height: 390px;
+
+    padding: 25px;
+}
+
+
+/* =========================================
+   PANEL HEADER
+   ========================================= */
+
+.panel-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #d7dadd;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 20px;
+}
+
+.panel-header h5 {
+
+    margin: 0;
+
+    font-weight: 600;
+
+    color: #25282b;
+}
+
+.panel-header p {
+
+    margin: 4px 0 0;
+
+    color: #858a8e;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   CHART AREA
+   ========================================= */
+
+.chart-container {
+
+    min-height: 270px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.empty-chart {
+
+    text-align: center;
+
+    color: #777d81;
+}
+
+.empty-chart > i {
+
+    font-size: 50px;
+
+    color: #555b60;
+}
+
+.empty-chart h5 {
+
+    margin-top: 10px;
+
+    color: #34373a;
+}
+
+.empty-chart p {
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+   ========================================= */
+
+.quick-action {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    color: #25282b;
+
+    text-decoration: none;
+
+    border: 1px solid #d0d3d5;
+
+    border-radius: 8px;
+
+    background: #f1f3f4;
+
+    transition: 0.2s;
+}
+
+.quick-action:hover {
+
+    background: #e1e4e6;
+
+    color: #25282b;
+
+    transform: translateX(2px);
+}
+
+
+/* QUICK ICON */
+
+.quick-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    border-radius: 7px;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+}
+
+
+/* QUICK TEXT */
+
+.quick-action strong {
+
+    display: block;
+
+    font-size: 13px;
+}
+
+.quick-action small {
+
+    display: block;
+
+    color: #858a8e;
+
+    font-size: 11px;
+
+    margin-top: 2px;
+}
+
+.quick-action > i:last-child {
+
+    margin-left: auto;
+
+    color: #777d81;
+}
+
+
+/* =========================================
+   METALLIC BUTTON
+   ========================================= */
+
+.btn-metal {
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+
+    border: 1px solid #151719;
+
+    border-radius: 7px;
+
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.25),
+        0 3px 6px rgba(0, 0, 0, 0.2);
+
+    transition: 0.2s;
+}
+
+.btn-metal:hover {
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #34383c,
+        #858b90,
+        #303438
+    );
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.dashboard-footer {
+
+    text-align: center;
+
+    padding: 15px 20px 25px;
+
+    color: #858a8e;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .sidebar {
+
+        width: 210px;
+    }
+
+    .main-content {
+
+        margin-left: 210px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .main-content {
+
+        margin-left: 0;
+    }
+
+    .top-navbar {
+
+        padding: 0 20px;
+    }
+
+    .dashboard-container {
+
+        padding: 20px;
+    }
+
+    .top-navbar-right span {
+
+        display: none;
+    }
+
+}
+
+/* =========================================
+   EMPLOYEE PAGE
+   ========================================= */
+
+.employee-page-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   EMPLOYEE TABLE CARD
+   ========================================= */
+
+.employee-table-card {
+
+    overflow: hidden;
+
+    padding: 25px;
+}
+
+
+/* =========================================
+   EMPLOYEE COUNT
+   ========================================= */
+
+.employee-count {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #777d81;
+
+    font-size: 13px;
+}
+
+.employee-count i {
+
+    color: #555b60;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.employee-table-card .table {
+
+    margin-top: 5px;
+
+    color: #25282b;
+}
+
+.employee-table-card .table thead {
+
+    background: linear-gradient(
+        135deg,
+        #25282b,
+        #555b60
+    );
+
+    color: white;
+}
+
+.employee-table-card .table thead th {
+
+    padding: 14px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border: none;
+
+    white-space: nowrap;
+}
+
+.employee-table-card .table tbody td {
+
+    padding: 14px;
+
+    font-size: 14px;
+
+    border-color: #e0e2e4;
+}
+
+.employee-table-card .table tbody tr {
+
+    transition: 0.2s;
+}
+
+.employee-table-card .table tbody tr:hover {
+
+    background-color: #e1e4e6;
+}
+
+
+/* =========================================
+   EMPTY EMPLOYEE STATE
+   ========================================= */
+
+.empty-employees {
+
+    padding: 20px;
+
+    color: #777d81;
+}
+
+.empty-employees i {
+
+    font-size: 45px;
+
+    color: #555b60;
+}
+
+.empty-employees h5 {
+
+    margin-top: 10px;
+
+    color: #34373a;
+}
+
+.empty-employees p {
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   RESPONSIVE EMPLOYEE PAGE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .employee-page-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .employee-table-card {
+
+        padding: 15px;
+    }
+
+}
+/* =========================================
+   EMPLOYEE OVERVIEW
+   ========================================= */
+
+.employee-overview-card {
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background: #f8f9fa;
+}
+
+
+/* HEADER */
+
+.overview-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #d5d8db;
+
+    background: linear-gradient(
+        135deg,
+        #f8f9fa,
+        #eef0f2
+    );
+}
+
+
+.overview-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.overview-title-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.25),
+        0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+.overview-title-icon i {
+
+    font-size: 20px;
+}
+
+
+.overview-title h5 {
+
+    margin: 0;
+
+    color: #25282b;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.overview-title p {
+
+    margin: 3px 0 0;
+
+    color: #858b90;
+
+    font-size: 12px;
+}
+
+
+/* TOTAL */
+
+.overview-total {
+
+    min-width: 75px;
+
+    padding: 7px 12px;
+
+    text-align: center;
+
+    background: #e1e4e6;
+
+    border: 1px solid #c5c9cc;
+
+    border-radius: 8px;
+}
+
+
+.overview-total span {
+
+    display: block;
+
+    color: #777d81;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.overview-total strong {
+
+    display: block;
+
+    color: #25282b;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* CONTENT */
+
+.overview-content {
+
+    padding: 22px 25px;
+}
+
+
+/* DEPARTMENT ROW */
+
+.overview-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #e3e5e7;
+
+    transition: 0.2s ease;
+}
+
+
+.overview-item:first-child {
+
+    padding-top: 0;
+}
+
+
+.overview-item:last-child {
+
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+
+.overview-item:hover {
+
+    transform: translateX(3px);
+}
+
+
+/* ICON */
+
+.overview-department-icon {
+
+    flex-shrink: 0;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #34373a;
+
+    background: linear-gradient(
+        135deg,
+        #e4e6e8,
+        #cfd3d6
+    );
+
+    border: 1px solid #b8bdc1;
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.8);
+}
+
+
+.overview-department-icon i {
+
+    font-size: 18px;
+}
+
+
+/* DETAILS */
+
+.overview-details {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* NAME + NUMBER */
+
+.overview-label {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+
+
+.overview-label span {
+
+    color: #34373a;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.overview-label strong {
+
+    color: #25282b;
+
+    font-size: 14px;
+}
+
+
+/* PROGRESS */
+
+.overview-progress {
+
+    width: 100%;
+
+    height: 8px;
+
+    overflow: hidden;
+
+    background: #dfe2e4;
+
+    border: 1px solid #c9cdd0;
+
+    border-radius: 20px;
+}
+
+
+.overview-progress-fill {
+
+    height: 100%;
+
+    min-width: 5px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #17191c,
+        #464b50,
+        #858b90
+    );
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.25);
+
+    transition: width 0.6s ease;
+}
+
+
+/* BOTTOM TEXT */
+
+.overview-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 5px;
+
+    color: #92979b;
+
+    font-size: 10px;
+}
+
+
+/* EMPTY STATE */
+
+.overview-empty {
+
+    padding: 25px 10px;
+
+    text-align: center;
+
+    color: #777d81;
+}
+
+
+.overview-empty-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #555b60;
+
+    background: #e1e4e6;
+
+    border: 1px solid #c2c6c9;
+
+    border-radius: 50%;
+}
+
+
+.overview-empty-icon i {
+
+    font-size: 26px;
+}
+
+
+.overview-empty h5 {
+
+    margin-bottom: 5px;
+
+    color: #34373a;
+
+    font-size: 15px;
+}
+
+
+.overview-empty p {
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .overview-header {
+
+        padding: 18px;
+
+    }
+
+    .overview-content {
+
+        padding: 18px;
+
+    }
+
+    .overview-total {
+
+        min-width: 60px;
+
+        padding: 6px 9px;
+
+    }
+
+    .overview-title-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+    }
+
+    .overview-item {
+
+        gap: 10px;
+
+    }
+
+    .overview-department-icon {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+}
+
+/* =========================================
+   EMPLOYEE PAGE - MAIN STRUCTURE
+   ========================================= */
+
+.employee-header-spacing {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   EMPLOYEE CARD HEADER
+   ========================================= */
+
+.employee-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #d5d8db;
+
+    background: linear-gradient(
+        135deg,
+        #f8f9fa,
+        #eef0f2
+    );
+}
+
+
+/* =========================================
+   EMPLOYEE CARD TITLE
+   ========================================= */
+
+.employee-card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.employee-card-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+
+    border-radius: 10px;
+
+    border: 1px solid #151719;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.25),
+        0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+.employee-card-icon i {
+
+    font-size: 20px;
+}
+
+
+.employee-card-title h5 {
+
+    margin: 0;
+
+    color: #25282b;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.employee-card-title p {
+
+    margin: 3px 0 0;
+
+    color: #858b90;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   EMPLOYEE COUNT
+   ========================================= */
+
+.employee-count {
+
+    padding: 8px 13px;
+
+    background: #e1e4e6;
+
+    border: 1px solid #c5c9cc;
+
+    border-radius: 8px;
+
+    white-space: nowrap;
+}
+
+
+.employee-count i {
+
+    margin-right: 5px;
+
+    color: #555b60;
+}
+
+
+.employee-count span {
+
+    color: #555b60;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   EMPLOYEE TABLE
+   ========================================= */
+
+.employee-table {
+
+    color: #25282b;
+
+    background: #f8f9fa;
+}
+
+
+.employee-table thead {
+
+    background: linear-gradient(
+        135deg,
+        #25282b,
+        #555b60
+    );
+
+    color: white;
+}
+
+
+.employee-table thead th {
+
+    padding: 14px 15px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    border: none;
+
+    white-space: nowrap;
+}
+
+
+.employee-table tbody td {
+
+    padding: 14px 15px;
+
+    font-size: 13px;
+
+    border-color: #e0e2e4;
+
+    vertical-align: middle;
+}
+
+
+.employee-table tbody tr {
+
+    transition: 0.2s ease;
+}
+
+
+.employee-table tbody tr:hover {
+
+    background-color: #eef0f2;
+}
+
+
+/* =========================================
+   EMPLOYEE ID
+   ========================================= */
+
+.employee-id {
+
+    color: #555b60;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   EMPLOYEE NAME
+   ========================================= */
+
+.employee-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.employee-name strong {
+
+    color: #25282b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   EMPLOYEE AVATAR
+   ========================================= */
+
+.employee-avatar {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #202326,
+        #666c71,
+        #25282b
+    );
+
+    border-radius: 7px;
+
+    border: 1px solid #151719;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.25);
+}
+
+
+.employee-avatar i {
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   EMAIL
+   ========================================= */
+
+.employee-email {
+
+    color: #62686d;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   DEPARTMENT BADGE
+   ========================================= */
+
+.department-badge {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    color: #34373a;
+
+    background: linear-gradient(
+        135deg,
+        #e4e6e8,
+        #d4d7d9
+    );
+
+    border: 1px solid #b8bdc1;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   EMPLOYEE ACTIONS
+   ========================================= */
+
+.employee-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+}
+
+
+.employee-actions .btn {
+
+    font-size: 11px;
+
+    padding: 6px 9px;
+
+    border-radius: 6px;
+
+    white-space: nowrap;
+}
+
+
+.employee-actions .btn-outline-secondary {
+
+    color: #4f555a;
+
+    border-color: #aeb3b7;
+
+    background: #f8f9fa;
+}
+
+
+.employee-actions .btn-outline-secondary:hover {
+
+    color: white;
+
+    background: #555b60;
+
+    border-color: #555b60;
+}
+
+
+.employee-actions .btn-danger {
+
+    background: #d9364f;
+
+    border-color: #d9364f;
+}
+
+
+.employee-actions .btn-danger:hover {
+
+    background: #bb2940;
+
+    border-color: #bb2940;
+}
+
+
+/* =========================================
+   EMPTY EMPLOYEE STATE
+   ========================================= */
+
+.empty-employees {
+
+    padding: 45px 20px;
+
+    color: #777d81;
+}
+
+
+.empty-employee-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #555b60;
+
+    background: #e1e4e6;
+
+    border: 1px solid #c2c6c9;
+
+    border-radius: 50%;
+}
+
+
+.empty-employee-icon i {
+
+    font-size: 28px;
+}
+
+
+.empty-employees h5 {
+
+    margin-bottom: 5px;
+
+    color: #34373a;
+
+    font-size: 16px;
+}
+
+
+.empty-employees p {
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.employee-back {
+
+    margin-top: 20px;
+}
+
+
+.employee-back .btn {
+
+    font-size: 13px;
+
+    border-color: #aeb3b7;
+
+    color: #62686d;
+}
+
+
+.employee-back .btn:hover {
+
+    color: white;
+
+    background: #555b60;
+
+    border-color: #555b60;
+}
+
+
+/* =========================================
+   RESPONSIVE EMPLOYEE TABLE
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .employee-card-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .employee-count {
+
+        align-self: flex-start;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .employee-table-card {
+
+        padding: 0;
+
+        border-radius: 10px;
+    }
+
+    .employee-card-header {
+
+        padding: 18px;
+    }
+
+    .employee-table thead th,
+    .employee-table tbody td {
+
+        padding: 12px;
+
+    }
+
+    .employee-actions {
+
+        flex-direction: column;
+
+    }
+
+    .employee-actions .btn {
+
+        width: 100%;
+
+    }
+
+}
